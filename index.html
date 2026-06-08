@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thilagesh-Book-Shop</title>
+    <!-- STABLE TAILWIND CSS V3 CDN (Works immediately on all browsers) -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- 1. Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">TB</div>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#services" class="hover:text-blue-600 transition">About Us</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <!-- Replace with client's Sri Lankan phone number starting with 94 -->
+            <a href="https://wa.me" target="_blank" class="bg-green-500 text-white px-5 py-2 rounded-full font-bold hover:bg-green-600 transition flex items-center gap-2">
+                WhatsApp Chat
+            </a>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section (Typo Fixed) -->
+    <section id="home" class="bg-[url('images/hero.jpg')] bg-cover bg-center py-24 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <span class="bg-yellow-100 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Welcome to our official website</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-4 leading-tight text-yellow-100">THILAGESH BOOK SHOP</h1>
+            <p class="text-lg md:text-xl text-yellow-100 mb-8">Buy BookS| Printings | Stationery</p>
+            <div class="flex justify-center gap-4">
+                <a href="#services" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-md">Our Services</a>
+                <a href="#contact" class="bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition border border-yellow-800">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services Section -->
+    <section id="services" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-2">Our Specialized Services</h2>
+            <p class="text-gray-500">We offer high-quality solutions tailored directly to your specific needs.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center text-blue-600 text-2xl mb-6">⭐</div>
+                <h3 class="text-xl font-bold mb-3">Service Type 01</h3>
+                <p class="text-gray-600 leading-relaxed">Briefly describe the client's main service here. Highlight the value it offers to their local customers.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center text-blue-600 text-2xl mb-6">🚀</div>
+                <h3 class="text-xl font-bold mb-3">Service Type 02</h3>
+                <p class="text-gray-600 leading-relaxed">Briefly describe the client's second service here. Keep it punchy, short, and easy to read.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center text-blue-600 text-2xl mb-6">🛠️</div>
+                <h3 class="text-xl font-bold mb-3">Service Type 03</h3>
+                <p class="text-gray-600 leading-relaxed">Briefly describe the client's third service here. Focus on why they are better than local competitors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Contact Section -->
+    <section id="contact" class="bg-gray-100 py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Book an Appointment Today!</h2>
+            <p class="text-gray-600 mb-8 max-w-xl mx-auto">Have questions or want to make a booking? Click the button below to message us directly on WhatsApp for an immediate response.</p>
+            
+            <!-- Change '94771234567' to the client's actual phone number -->
+            <a href="https://wa.me?text=Hi!%20I%20found%20your%20business%20on%20your%20website%20and%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="inline-flex items-center gap-3 bg-green-500 text-white text-xl font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-green-600 transition tracking-wide">
+                💬 Connect via WhatsApp
+            </a>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600 text-left max-w-md mx-auto pt-8 border-t border-gray-200">
+                <div>
+                    <p class="font-bold text-gray-800">📍 Address:</p>
+                    <p class="text-sm mt-1">Galle Road, Colombo, Sri Lanka.</p>
+                </div>
+                <div>
+                    <p class="font-bold text-gray-800">📞 Phone:</p>
+                    <p class="text-sm mt-1">+94 77 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <p>&copy; 2026 Business Name. All Rights Reserved.</p>
+        <p class="mt-2 text-gray-600">Designed & Developed by <span class="text-blue-400 font-medium">THILAK DEV</span></p>
+    </footer>
+
+</body>
+</html>
